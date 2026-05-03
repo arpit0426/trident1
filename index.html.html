@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TridentOs</title>
+</head>
+
+<body style="background-image: url('wallpaper.jpg'); background-size: cover; background-position: center; background-attachment: fixed; margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;">
+    
+    <div style="width: 100%; height: 30px; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(5px); display: flex; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box; font-size: 14px; position: fixed; top: 0; z-index: 1000;">
+        <div>TridentOs Menu</div>
+        <div id="clock">02:05:00 PM</div>
+    </div>
+    <h1 font-size= 50px; font-width= 700 style="text-align: center; margin-top: 40px; text-shadow: 2px 2px 4px rgb(0, 0, 0);">TridentOs</h1>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <input type="text" id="osSearch" placeholder="Search apps or web..." 
+            style="width: 300px; padding: 12px 20px; border-radius: 25px; border: none; outline: none; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); color: white; border: 1px solid rgba(255,255,255,0.3); font-size: 16px;"
+            onkeypress="handleSearch(event)">
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        
+        <div style="display: inline-block; margin: 15px; vertical-align: top;">
+            <a href="cal.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <img src="ca.png" alt="calculator" style="width: 80px; display: block; margin: 0 auto 8px; border-radius: 18px; transition: transform 0.2s;">
+                <span style="font-size: 14px;">Calculator</span>
+            </a>
+        </div>
+
+        <div style="display: inline-block; margin: 15px; vertical-align: top;">
+            <a href="number game.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <img src="123.png" alt="game" style="width: 80px; display: block; margin: 0 auto 8px; border-radius: 18px; transition: transform 0.2s;">
+                <span style="font-size: 14px;">Game</span>
+            </a>
+        </div>   
+
+        <div style="display: inline-block; margin: 15px; vertical-align: top;">
+            <a href="setting.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <img src="setting3.png" alt="setting" style="width: 80px; display: block; margin: 0 auto 8px; border-radius: 18px; transition: transform 0.2s;">
+                <span style="font-size: 14px;">Settings</span>
+            </a>
+        </div>
+
+         <div style="display: inline-block; margin: 15px; vertical-align: top;">
+            <a href="shortcut.html" style="text-decoration: none; color: rgb(0, 0, 0);">
+                <img src="ADD.png" alt="shortcut" style="width: 80px; display: block; margin: 0 auto 8px; border-radius: 18px; transition: transform 0.2s;">
+                <span style="font-size: 14px;">Shortcut</span>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        function handleSearch(event) {
+            if (event.key === "Enter") {
+                let query = document.getElementById('osSearch').value;
+                alert("Searching TridentOs for: " + query);
+
+            }
+        }
+    </script>
+
+</body>
+</html>
